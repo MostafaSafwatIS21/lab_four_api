@@ -1,0 +1,1038 @@
+{
+  "info": {
+    "_postman_id": "e37dc00f-1b3e-4b68-b17f-cf55364cbfed",
+    "name": "Ruby on rails",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37628164"
+  },
+  "item": [
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "get",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/users",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "users"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "get",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{URL}}/users",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "users"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-permitted-cross-domain-policies",
+                  "value": "none"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"89e4055e7717dc99d297c09f2b5ef3c1\""
+                },
+                {
+                  "key": "cache-control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "x-request-id",
+                  "value": "8f9afe83-cce8-40d3-96a4-b62e78d64b74"
+                },
+                {
+                  "key": "x-runtime",
+                  "value": "0.004601"
+                },
+                {
+                  "key": "server-timing",
+                  "value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.21, instantiation.active_record;dur=0.07, process_action.action_controller;dur=2.26"
+                },
+                {
+                  "key": "content-length",
+                  "value": "131"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Mostafa,\",\n        \"email\": \"sa@gmail.com\",\n        \"created_at\": \"2026-04-18T15:46:49.366Z\",\n        \"updated_at\": \"2026-04-18T15:46:49.366Z\"\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"sa@gmail.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/users",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "users"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "create",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\":\"MSafwat,\",\n    \"email\":\"sa@gmail.com\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{URL}}/users",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "users"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-permitted-cross-domain-policies",
+                  "value": "none"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "location",
+                  "value": "http://127.0.0.1:3000/users/3"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"5df916c735daf5cf37b9c4cb105c0b6c\""
+                },
+                {
+                  "key": "cache-control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "x-request-id",
+                  "value": "092781b4-8598-40ea-9672-ed16ca96177d"
+                },
+                {
+                  "key": "x-runtime",
+                  "value": "0.007081"
+                },
+                {
+                  "key": "server-timing",
+                  "value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=1.59, start_transaction.active_record;dur=0.01, transaction.active_record;dur=2.07, process_action.action_controller;dur=4.80"
+                },
+                {
+                  "key": "content-length",
+                  "value": "129"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 3,\n    \"name\": \"MSafwat,\",\n    \"email\": \"sa@gmail.com\",\n    \"created_at\": \"2026-04-18T15:50:59.374Z\",\n    \"updated_at\": \"2026-04-18T15:50:59.374Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "get one",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"sa@gmail.com\"\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/users/3",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "users",
+                "3"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "get one",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"sa@gmail.com\"\n}"
+                },
+                "url": {
+                  "raw": "{{URL}}/users/1",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "users",
+                    "1"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "",
+              "header": [
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-permitted-cross-domain-policies",
+                  "value": "none"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"5df916c735daf5cf37b9c4cb105c0b6c\""
+                },
+                {
+                  "key": "cache-control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "x-request-id",
+                  "value": "e55cfc33-2b28-42e0-87ac-96ee2c50d013"
+                },
+                {
+                  "key": "x-runtime",
+                  "value": "0.003848"
+                },
+                {
+                  "key": "server-timing",
+                  "value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.12, instantiation.active_record;dur=0.04, process_action.action_controller;dur=1.77"
+                },
+                {
+                  "key": "content-length",
+                  "value": "129"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"id\": 3,\n    \"name\": \"MSafwat,\",\n    \"email\": \"sa@gmail.com\",\n    \"created_at\": \"2026-04-18T15:50:59.374Z\",\n    \"updated_at\": \"2026-04-18T15:50:59.374Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"sa@gmail.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/users/1",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "users",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "update",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"ma@gmail.com\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{URL}}/users/3",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "users",
+                    "3"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-permitted-cross-domain-policies",
+                  "value": "none"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"5642dd0576d4d01ebdc262834555807b\""
+                },
+                {
+                  "key": "cache-control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "x-request-id",
+                  "value": "b66a9c81-c3b2-4032-89fc-b89b1f2c9110"
+                },
+                {
+                  "key": "x-runtime",
+                  "value": "0.011521"
+                },
+                {
+                  "key": "server-timing",
+                  "value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=2.65, instantiation.active_record;dur=0.12, start_transaction.active_record;dur=0.01, transaction.active_record;dur=3.34, process_action.action_controller;dur=8.91"
+                },
+                {
+                  "key": "content-length",
+                  "value": "129"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"name\": \"Mostafa,\",\n    \"email\": \"ma@gmail.com\",\n    \"id\": 3,\n    \"created_at\": \"2026-04-18T15:50:59.374Z\",\n    \"updated_at\": \"2026-04-18T15:51:38.969Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"sa@gmail.com\"\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/users/1",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "users",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "delete",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"sa@gmail.com\"\n}"
+                },
+                "url": {
+                  "raw": "{{URL}}/users/2",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "users",
+                    "2"
+                  ]
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "x-request-id",
+                  "value": "68d91529-b7f5-4fa2-a045-9528300b68bf"
+                },
+                {
+                  "key": "x-runtime",
+                  "value": "0.008710"
+                },
+                {
+                  "key": "server-timing",
+                  "value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=1.71, instantiation.active_record;dur=0.05, start_transaction.active_record;dur=0.03, transaction.active_record;dur=2.67, process_action.action_controller;dur=5.54"
+                },
+                {
+                  "key": "content-length",
+                  "value": "237"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"exception\": \"#<ActiveRecord::InvalidForeignKey: SQLite3::ConstraintException: FOREIGN KEY constraint failed>\",\n    \"traces\": {\n        \"Application Trace\": [],\n        \"Framework Trace\": [],\n        \"Full Trace\": []\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "post",
+      "item": [
+        {
+          "name": "get",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/posts",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "posts"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "get",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{URL}}/posts",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "posts"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-permitted-cross-domain-policies",
+                  "value": "none"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"421761a7f44b1673a664d1ede38c3890\""
+                },
+                {
+                  "key": "cache-control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "x-request-id",
+                  "value": "b6d21880-c9ef-4378-b3cb-ac1c588ebc52"
+                },
+                {
+                  "key": "x-runtime",
+                  "value": "0.007022"
+                },
+                {
+                  "key": "server-timing",
+                  "value": "start_processing.action_controller;dur=0.02, sql.active_record;dur=0.22, instantiation.active_record;dur=0.11, process_action.action_controller;dur=3.90"
+                },
+                {
+                  "key": "content-length",
+                  "value": "1129"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": 1,\n        \"title\": \"E-Books,\",\n        \"content\": \"You’ve already had some familiarity with associations, especially the basic has_one, has_many, and belongs_to variety. Thus far, you’ve probably mostly used these associations to grab collections of objects like a user’s posts (user.posts). There are a lot of other handy things that Rails lets you do with associations too. This brief section will highlight some of the more useful methods that come along with associations.\",\n        \"user_id\": 2,\n        \"created_at\": \"2026-04-18T15:48:56.749Z\",\n        \"updated_at\": \"2026-04-18T15:48:56.749Z\"\n    },\n    {\n        \"id\": 2,\n        \"title\": \"C-Books,\",\n        \"content\": \"You’ve already had some familiarity with associations, especially the basic has_one, has_many, and belongs_to variety. Thus far, you’ve probably mostly used these associations to grab collections of objects like a user’s posts (user.posts). There are a lot of other handy things that Rails lets you do with associations too. This brief section will highlight some of the more useful methods that come along with associations.\",\n        \"user_id\": 2,\n        \"created_at\": \"2026-04-18T15:49:03.812Z\",\n        \"updated_at\": \"2026-04-18T15:49:03.812Z\"\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\":\"C-Books,\",\n    \"content\":\"You’ve already had some familiarity with associations, especially the basic has_one, has_many, and belongs_to variety. Thus far, you’ve probably mostly used these associations to grab collections of objects like a user’s posts (user.posts). There are a lot of other handy things that Rails lets you do with associations too. This brief section will highlight some of the more useful methods that come along with associations.\",\n    \"user_id\":2\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/posts",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "posts"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "create",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"title\":\"C-Books,\",\n    \"content\":\"You’ve already had some familiarity with associations, especially the basic has_one, has_many, and belongs_to variety. Thus far, you’ve probably mostly used these associations to grab collections of objects like a user’s posts (user.posts). There are a lot of other handy things that Rails lets you do with associations too. This brief section will highlight some of the more useful methods that come along with associations.\",\n    \"user_id\":2\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{URL}}/posts",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "posts"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-permitted-cross-domain-policies",
+                  "value": "none"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "location",
+                  "value": "http://127.0.0.1:3000/posts/2"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"09d7138d331cebf14b873be41228b5dc\""
+                },
+                {
+                  "key": "cache-control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "x-request-id",
+                  "value": "8bbe5ca1-f534-4b21-a0c5-b07b3dbd6e0c"
+                },
+                {
+                  "key": "x-runtime",
+                  "value": "0.008977"
+                },
+                {
+                  "key": "server-timing",
+                  "value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=1.74, start_transaction.active_record;dur=0.03, instantiation.active_record;dur=0.04, transaction.active_record;dur=4.13, process_action.action_controller;dur=6.90"
+                },
+                {
+                  "key": "content-length",
+                  "value": "563"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 2,\n    \"title\": \"C-Books,\",\n    \"content\": \"You’ve already had some familiarity with associations, especially the basic has_one, has_many, and belongs_to variety. Thus far, you’ve probably mostly used these associations to grab collections of objects like a user’s posts (user.posts). There are a lot of other handy things that Rails lets you do with associations too. This brief section will highlight some of the more useful methods that come along with associations.\",\n    \"user_id\": 2,\n    \"created_at\": \"2026-04-18T15:49:03.812Z\",\n    \"updated_at\": \"2026-04-18T15:49:03.812Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "get one",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"sa@gmail.com\"\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/posts/1",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "posts",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "get one",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"sa@gmail.com\"\n}"
+                },
+                "url": {
+                  "raw": "{{URL}}/posts/1",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "posts",
+                    "1"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-permitted-cross-domain-policies",
+                  "value": "none"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"84b02723cdf19df04fae5a30936aff7e\""
+                },
+                {
+                  "key": "cache-control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "x-request-id",
+                  "value": "b5436f1f-d56d-42f4-bc9c-a547d1549e1c"
+                },
+                {
+                  "key": "x-runtime",
+                  "value": "0.009952"
+                },
+                {
+                  "key": "server-timing",
+                  "value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.20, instantiation.active_record;dur=0.09, process_action.action_controller;dur=3.32"
+                },
+                {
+                  "key": "content-length",
+                  "value": "563"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 1,\n    \"title\": \"E-Books,\",\n    \"content\": \"You’ve already had some familiarity with associations, especially the basic has_one, has_many, and belongs_to variety. Thus far, you’ve probably mostly used these associations to grab collections of objects like a user’s posts (user.posts). There are a lot of other handy things that Rails lets you do with associations too. This brief section will highlight some of the more useful methods that come along with associations.\",\n    \"user_id\": 2,\n    \"created_at\": \"2026-04-18T15:48:56.749Z\",\n    \"updated_at\": \"2026-04-18T15:48:56.749Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\":\"D-Book,\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/posts/2",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "posts",
+                "2"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "update",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"title\":\"D-Book,\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{URL}}/posts/2",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "posts",
+                    "2"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-permitted-cross-domain-policies",
+                  "value": "none"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"051ad768c769f3e2ce696aff4aeea558\""
+                },
+                {
+                  "key": "cache-control",
+                  "value": "max-age=0, private, must-revalidate"
+                },
+                {
+                  "key": "x-request-id",
+                  "value": "6b5b2ae9-6f4e-4902-8816-9eae02c64768"
+                },
+                {
+                  "key": "x-runtime",
+                  "value": "0.007531"
+                },
+                {
+                  "key": "server-timing",
+                  "value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=1.67, instantiation.active_record;dur=0.08, start_transaction.active_record;dur=0.03, transaction.active_record;dur=1.92, process_action.action_controller;dur=5.65"
+                },
+                {
+                  "key": "content-length",
+                  "value": "562"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"title\": \"D-Book,\",\n    \"user_id\": 2,\n    \"id\": 2,\n    \"content\": \"You’ve already had some familiarity with associations, especially the basic has_one, has_many, and belongs_to variety. Thus far, you’ve probably mostly used these associations to grab collections of objects like a user’s posts (user.posts). There are a lot of other handy things that Rails lets you do with associations too. This brief section will highlight some of the more useful methods that come along with associations.\",\n    \"created_at\": \"2026-04-18T15:49:03.812Z\",\n    \"updated_at\": \"2026-04-18T15:50:17.657Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"sa@gmail.com\"\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/posts/1",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "posts",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "delete",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\":\"Mostafa,\",\n    \"email\":\"sa@gmail.com\"\n}"
+                },
+                "url": {
+                  "raw": "{{URL}}/posts/1",
+                  "host": [
+                    "{{URL}}"
+                  ],
+                  "path": [
+                    "posts",
+                    "1"
+                  ]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "0"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-permitted-cross-domain-policies",
+                  "value": "none"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "strict-origin-when-cross-origin"
+                },
+                {
+                  "key": "cache-control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "x-request-id",
+                  "value": "a10f2cd6-dae6-4fed-bc18-cfc361c1ed13"
+                },
+                {
+                  "key": "x-runtime",
+                  "value": "0.007899"
+                },
+                {
+                  "key": "server-timing",
+                  "value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=1.45, instantiation.active_record;dur=0.06, start_transaction.active_record;dur=0.01, transaction.active_record;dur=3.20, process_action.action_controller;dur=6.17"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
